@@ -1,0 +1,1 @@
+[{"model": "assistance_bot.topic", "pk": 1, "fields": {"name": "Sales", "channels": [1, 2]}}, {"model": "assistance_bot.topic", "pk": 2, "fields": {"name": "Pricing", "channels": [2]}}]

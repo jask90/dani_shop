@@ -1,0 +1,32 @@
+{% load i18n %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Mail</title>
+    </head>
+    <body>
+
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Titillium+Web:300,400,600" rel="stylesheet">
+        <style type="text/css">
+            p { font-family: 'Titillium Web', sans-serif; font-size: 12pt; color: #666666;
+            }
+        </style>
+
+        <div style="width: 505px; margin: auto;">
+            <div style="background-color: #ebeff2; padding: 28px; border-radius: 10px; width: 505px; margin: auto; padding-bottom:0px;">
+                <p style="font-family: 'Titillium Web', sans-serif; font-size: 12pt; color: #666666;">{% trans "Apreciado/a usuario/a" %}</p>
+                <p style="font-family: 'Titillium Web', sans-serif; font-size: 12pt; color: #666666;">{% trans "Bienvenido a nuestra tienda!!!" %}.</p>
+                <div style="text-align:center; margin-top: 32px; margin-bottom: 32px;">
+            </div>
+            </div>
+                <div style="font-family: 'Titillium Web', sans-serif; font-size: 10pt; width: 505px; padding: 0 28px;">
+                <div style="color:#666666; float: left;">&copy; {% trans "Dani Shop" %}</div>
+                <div style="float:right;"></div>
+            </div>
+        </div>
+    </body>
+</html>

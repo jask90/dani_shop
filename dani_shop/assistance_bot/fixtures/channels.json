@@ -1,0 +1,1 @@
+[{"model": "assistance_bot.channel", "pk": 1, "fields": {"name": "Email", "function": "ask_to_email"}}, {"model": "assistance_bot.channel", "pk": 2, "fields": {"name": "Telegram", "function": "ask_to_telegram"}}]
