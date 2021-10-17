@@ -17,7 +17,7 @@ ENV PYTHONUNBUFFERED 1
 # Inform Docker that the container is listening on the specified port at runtime.
 EXPOSE 8000
 
-RUN chmod 777 /opt/dani_shop/entrypoint.sh
+RUN chmod +x /opt/dani_shop/entrypoint.sh
 
 # Run the specified command within the container.
 ENTRYPOINT ["/opt/dani_shop/entrypoint.sh"]

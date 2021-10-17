@@ -1,5 +1,6 @@
 # Django
 Django==3.2
+psycopg2==2.8.6
 
 # Rest Framework
 requests==2.23.0
