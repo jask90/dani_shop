@@ -34,7 +34,7 @@ class RegisterUserTestCase(TestCase):
         correct_result = {}
         bad_result = {"errors": {"email": ["Enter a valid email address."]}}
 
-        data = {'name': 'Foo', 'email': 'test@gmail.com', 'phone': '987654321', 'origin': 'bot'}
+        data = {'name': 'Foo', 'email': 'test@gmail.com', 'phone': '987654321', 'country': 'Spain'}
 
         response = client.post('/api/register_user/', data, format='json')
 
@@ -42,7 +42,7 @@ class RegisterUserTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(result, correct_result)
 
-        bad_data = {'name': 'Foo', 'email': 'bad email', 'phone': '987654321', 'origin': 'bot'}
+        bad_data = {'name': 'Foo', 'email': 'bad email', 'phone': '987654321', 'country': 'Spain'}
 
         bad_response = client.post('/api/register_user/', bad_data, format='json')
         result = json.loads(bad_response.content)

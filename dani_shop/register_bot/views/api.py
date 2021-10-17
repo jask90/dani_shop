@@ -32,7 +32,7 @@ def register_user(request):
         with transaction.atomic():
             data = serializer.validated_data
             user, created = User.objects.get_or_create(username=data['email'], email=data['email'], first_name=data['name'])
-            profile, created = Profile.objects.get_or_create(user=user, phone=data['phone'], origin=data.get('origin', 'bot'))
+            profile, created = Profile.objects.get_or_create(user=user, phone=data['phone'], country=data['country'])
     else:
         response['errors'] = serializer.errors
         return HttpResponse(json.dumps(response), status=status.HTTP_400_BAD_REQUEST)

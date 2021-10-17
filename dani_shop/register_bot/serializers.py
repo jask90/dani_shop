@@ -6,4 +6,4 @@ class RegisterUserSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=200)
     email = serializers.EmailField()
     phone = serializers.CharField(max_length=64)
-    origin = serializers.ChoiceField(Profile.ORIGIN_CHOICES, allow_null=True, required=False)
+    country = serializers.CharField(allow_null=True, max_length=124)
