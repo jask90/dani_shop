@@ -59,3 +59,4 @@ Si deseas añadir más canales a la app de assistance_bot, o crear nuevos topics
 Datos de usuarios del fixture:
 * admin / 123456
 * api_user / EJH2y8dBMCvfVq2W
+
